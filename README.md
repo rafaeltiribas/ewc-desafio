@@ -4,7 +4,7 @@ O **Desafio EWC** tem como objetivo gerar um ranking do desempenho dos times Fú
 
 ## Como foi feita a ingestão dos dados?
 
-- 🔎**Web Scraping!**:
+- 🔎**Web Scraping!**
     - 🚨 A coleta dos dados de TODAS as partidas que a Fúria disputou no campeonato foi feita com Web Scraping!
     - 📚 Todos os dados do campeonato foram adquiridos da página do campeonato dentro da [Liquipedia](https://liquipedia.net/esports/Esports_World_Cup/2024).
     - 💡 O projeto foi desenvolvido de forma que com poucas alterações é possível gerar o ranking de QUALQUER time!
@@ -12,25 +12,10 @@ O **Desafio EWC** tem como objetivo gerar um ranking do desempenho dos times Fú
     - 🚫 A maioria das API's disponíveis não cobriam os dados de todas as modalidades que a Fúria disputou.
     - 🙅‍♂️ Todas as API's disponíveis gratuitamente possuiam um limite de requisições ou menor gama de detalhes das partidas.
 
-## Arquitetura
+## Estrutura do Projeto
 
 - 📚**O projeto está organizado da seguinte forma:**:
-EWC Desafio
-├── case_ewc
-│   ├── ingestion
-│   │   ├── scripts de ingestão dos dados via web scraping
-│   ├── processing
-│   │   ├── scripts de processamento dos dados para gerar o ranking e o gráfico
-│   ├── main.py
-├── data
-│   ├── resultados das partidas em formato JSON
-│   ├── ranking dos times FÚRIA em formato JSON
-├── tests
-│   ├── para testes unitários afim de verificar a funcionalidade do código
-├── utils
-│   ├── constantes e funções auxiliares
-├── pyproject.toml
-└── .tool-versions
+EWC Desafio ├── case_ewc │ ├── ingestion │ │ ├── scripts de ingestão dos dados via web scraping │ ├── processing │ │ ├── scripts de processamento dos dados para gerar o ranking e o gráfico │ ├── main.py ├── data │ ├── resultados das partidas em formato JSON │ ├── ranking dos times FÚRIA em formato JSON ├── tests │ ├── para testes unitários afim de verificar a funcionalidade do código ├── utils │ ├── constantes e funções auxiliares ├── pyproject.toml └── .tool-versions
 
 ## Requisitos
 
