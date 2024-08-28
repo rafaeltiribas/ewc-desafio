@@ -1,5 +1,24 @@
-Rainbow Six 6: 9 pontos
-FC 24: 9 pontos
-Street Fighter 6: 0 pontos
-Counter Strike: 0 pontos
-Rocket League: 0 pontos
+{
+    "Ranking Times Fúria EWC 2024": [
+        {
+            "Jogo": "Rainbow Six 6",
+            "Winrate (%)": 75.0
+        },
+        {
+            "Jogo": "Counter Strike",
+            "Winrate (%)": 60.0
+        },
+        {
+            "Jogo": "Rocket League",
+            "Winrate (%)": 60.0
+        },
+        {
+            "Jogo": "Street Fighter 6",
+            "Winrate (%)": 40.0
+        },
+        {
+            "Jogo": "FC 24",
+            "Winrate (%)": 37.5
+        }
+    ]
+}
