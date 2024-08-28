@@ -13,6 +13,8 @@ def get_fc_matches():
     groupstage_matches = get_groupstage_matches()
     final_stage_matches = get_final_stage_matches()
 
+    all_matches = groupstage_matches + final_stage_matches  # Combina todas as partidas
+
     try:
         with open(save_path, 'r', encoding='utf-8') as file:
             data = json.load(file)
@@ -20,10 +22,7 @@ def get_fc_matches():
         data = {"Jogos": {}}
 
     data["Jogos"]["FC 24"] = {
-        "Partidas": {
-            "Groupstage": groupstage_matches,
-            "FinalStage": final_stage_matches
-        }
+        "Partidas": all_matches  # Armazena todas as partidas combinadas
     }
 
     with open(save_path, 'w', encoding='utf-8') as file:
@@ -48,7 +47,6 @@ def get_final_stage_matches():
                 player2_score = opponent_entries[1].find('div', class_='brkts-opponent-score-inner').text.strip()
                 
                 if 'Nathansr99' in player1_name or 'Nathansr99' in player2_name:
-                    win = ""
                     if player1_name == 'Nathansr99':
                         win = "Vitória" if furia_win(player1_score, player2_score) else "Derrota"
                     else:

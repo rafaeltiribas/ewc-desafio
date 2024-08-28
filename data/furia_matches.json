@@ -150,68 +150,64 @@
             ]
         },
         "FC 24": {
-            "Partidas": {
-                "Groupstage": [
-                    {
-                        "Time1": "Nathansr22",
-                        "Time2": "GoalPoacher",
-                        "Placar1": "7",
-                        "Placar2": "2",
-                        "Resultado": "Vitória"
-                    },
-                    {
-                        "Time1": "nicolas99fc",
-                        "Time2": "Nathansr22",
-                        "Placar1": "2",
-                        "Placar2": "1",
-                        "Resultado": "Derrota"
-                    },
-                    {
-                        "Time1": "Nathansr22",
-                        "Time2": "ManuBachoore",
-                        "Placar1": "7",
-                        "Placar2": "3",
-                        "Resultado": "Vitória"
-                    },
-                    {
-                        "Time1": "Vejrgang",
-                        "Time2": "Nathansr22",
-                        "Placar1": "4",
-                        "Placar2": "3",
-                        "Resultado": "Derrota"
-                    },
-                    {
-                        "Time1": "Bonanno",
-                        "Time2": "Nathansr22",
-                        "Placar1": "5",
-                        "Placar2": "4",
-                        "Resultado": "Derrota"
-                    },
-                    {
-                        "Time1": "Nathansr22",
-                        "Time2": "Msdossary",
-                        "Placar1": "3",
-                        "Placar2": "2",
-                        "Resultado": "Vitória"
-                    },
-                    {
-                        "Time1": "PHzin",
-                        "Time2": "Nathansr22",
-                        "Placar1": "6",
-                        "Placar2": "4",
-                        "Resultado": "Derrota"
-                    }
-                ],
-                "FinalStage": [
-                    {
-                        "Time1": "Nathansr99",
-                        "Time2": "AbuMakkah",
-                        "Placar1": "3",
-                        "Placar2": "4",
-                        "Resultado": "Derrota"
-                    }
-                ]
-            }
+            "Partidas": [
+                {
+                    "Time1": "Nathansr22",
+                    "Time2": "GoalPoacher",
+                    "Placar1": "7",
+                    "Placar2": "2",
+                    "Resultado": "Vitória"
+                },
+                {
+                    "Time1": "nicolas99fc",
+                    "Time2": "Nathansr22",
+                    "Placar1": "2",
+                    "Placar2": "1",
+                    "Resultado": "Derrota"
+                },
+                {
+                    "Time1": "Nathansr22",
+                    "Time2": "ManuBachoore",
+                    "Placar1": "7",
+                    "Placar2": "3",
+                    "Resultado": "Vitória"
+                },
+                {
+                    "Time1": "Vejrgang",
+                    "Time2": "Nathansr22",
+                    "Placar1": "4",
+                    "Placar2": "3",
+                    "Resultado": "Derrota"
+                },
+                {
+                    "Time1": "Bonanno",
+                    "Time2": "Nathansr22",
+                    "Placar1": "5",
+                    "Placar2": "4",
+                    "Resultado": "Derrota"
+                },
+                {
+                    "Time1": "Nathansr22",
+                    "Time2": "Msdossary",
+                    "Placar1": "3",
+                    "Placar2": "2",
+                    "Resultado": "Vitória"
+                },
+                {
+                    "Time1": "PHzin",
+                    "Time2": "Nathansr22",
+                    "Placar1": "6",
+                    "Placar2": "4",
+                    "Resultado": "Derrota"
+                },
+                {
+                    "Time1": "Nathansr99",
+                    "Time2": "AbuMakkah",
+                    "Placar1": "3",
+                    "Placar2": "4",
+                    "Resultado": "Derrota"
+                }
+            ]
         }
     }
 }
