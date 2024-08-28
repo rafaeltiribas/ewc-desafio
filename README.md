@@ -1,66 +1,72 @@
-# Desafio EWC
+# 🎯 Desafio EWC
 
-O **Desafio EWC** tem como objetivo gerar um ranking do desempenho dos times Fúria na Esports World Cup 2024. Para que o desafio fosse completado era necessário que a coleta de dados fosse feita de maneira automática! (Stack livre).
+O **Desafio EWC** tem como premissa criar um ranking do desempenho da equipe Fúria na Esports World Cup 2024. 🚀 Para isso, era necessário que fosse feita uma coleta automática dos resultados da equipe em todas as modalidades que disputou! 🌐 (Stack livre).
 
-## Como foi feita a ingestão dos dados?
+## 🔍 Como foi feita a Coleta de Dados?
 
-- 🔎**Web Scraping!**
-    - 🚨 A coleta dos dados de TODAS as partidas que a Fúria disputou no campeonato foi feita com Web Scraping!
-    - 📚 Todos os dados do campeonato foram adquiridos da página do campeonato dentro da [Liquipedia](https://liquipedia.net/esports/Esports_World_Cup/2024).
-    - 💡 O projeto foi desenvolvido de forma que com poucas alterações é possível gerar o ranking de QUALQUER time!
-- 🤔 Por que não uma API?
-    - 🚫 A maioria das API's disponíveis não cobriam os dados de todas as modalidades que a Fúria disputou.
-    - 🙅‍♂️ Todas as API's disponíveis gratuitamente possuiam um limite de requisições ou menor gama de detalhes das partidas.
+- **Web Scraping** 🕷️
+  - A coleta de todos os dados das partidas da Fúria no campeonato foi realizada através de web scraping.
+  - Foi utilizada a página do campeonato na [Liquipedia](https://liquipedia.net/esports/Esports_World_Cup/2024) para obter todos os resultados necessário de todas as etapas.
+  - O projeto foi desenvolvido de maneira que fazendo apenas algumas alterações seja possível gerar o ranking de qualquer equipe! ⚙️
 
-## Estrutura do Projeto
+- **Por que não usar uma API?** 🤔
+  - Muitas APIs disponíveis não cobrem todas as modalidades em que a Fúria participou.
+  - Além disso, APIs gratuitas possuem limites de requisições e menos detalhes sobre as partidas. 🚫
 
-- 📚**O projeto está organizado da seguinte forma:**:
-EWC Desafio ├── case_ewc │ ├── ingestion │ │ ├── scripts de ingestão dos dados via web scraping │ ├── processing │ │ ├── scripts de processamento dos dados para gerar o ranking e o gráfico │ ├── main.py ├── data │ ├── resultados das partidas em formato JSON │ ├── ranking dos times FÚRIA em formato JSON ├── tests │ ├── para testes unitários afim de verificar a funcionalidade do código ├── utils │ ├── constantes e funções auxiliares ├── pyproject.toml └── .tool-versions
+## 📂 Estrutura do Projeto
 
-## Requisitos
+- **`/case_ewc`**: Onde ocorre a execução do projeto.
+  - **`/ingestion`**: Scripts para coleta de dados via web scraping.
+    - **`/games`**: Scripts específicos para cada jogo.
+  - **`/processing`**: Processamento dos dados e criação de gráficos.
+- **`/data`**: Armazena os resultados das partidas e rankings em formato JSON.
+- **`/tests`**: Diretório designado para testes unitários.
+- **`/utils`**: Contém constantes e métodos comuns usados no projeto.
 
-- Python (versão 3.8>)
-- Dependências especificadas em **pyproject.toml**
+## 🛠️ Requisitos
 
-### Instalação
+- Python (versão 3.8 ou superior) 🐍
+- Dependências listadas em **pyproject.toml** 📜
+
+### 📥 Instalação
 
 1. Clone o repositório:
 
-   \`\`\`bash
+   ```
    git clone https://github.com/rafaeltiribas/ewc-desafio
    cd ewc-desafio
-   \`\`\`
+   ```
 
 2. Instale as dependências:
 
-   \`\`\`bash
+   ```
    pip install .
-   \`\`\`
+   ```
 
 3. Entre no diretório de execução:
 
-   \`\`\`bash
+   ```
    cd case_ewc
-   \`\`\`
+   ```
 
 4. Rode o projeto:
 
-   \`\`\`bash
+   ```
    python main.go
-   \`\`\`
+   ```
 
-## Execução
+## 🚀 Execução
 
-- **Resultados da Fúria**: Todos os resultados da Fúria na EWC 2024 são coletados e armazenados no diretório `data` no arquivo **furia_matches.json**, confira!
-- **Ranking**: O ranking do time Fúria é gerado e armazenado no diretório `data` no arquivo **furia_ranking.json**, com os jogos que a Fúria disputou e o desempenho em cada modalidade!
-- **Gráfico**: Um gráfico é impresso na tela para melhor visualização dos dados obtidos após a execução do projeto.
+- **Resultados da Fúria**: Todos os resultados das partidas estão no arquivo **furia_matches.json** dentro do diretório `data`. Confira os resultados da Fúria!
+- **Ranking**: O ranking da Fúria é gerado e salvo em **furia_ranking.json**, com o desempenho em cada modalidade.
+- **Gráfico**: Um gráfico visualizando os dados obtidos será exibido na tela para facilitar a análise.
 
-## Resultado
+## 📊 Resultado
 
 <p align="center">
-  <img src="chart.png" width="528" height="272" alt="QR Code to join Limos"/>
+  <img src="chart.png" width="1233" height="635" alt="QR Code to join Limos"/>
 </p>
 
-## Contato
+## 📧 Contato
 
 Para qualquer dúvida ou feedback, entre em contato comigo por [rafaeltiribas@outlook.com](mailto:rafaeltiribas@outlook.com).
