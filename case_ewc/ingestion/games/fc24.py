@@ -13,7 +13,7 @@ def get_fc_matches():
     groupstage_matches = get_groupstage_matches()
     final_stage_matches = get_final_stage_matches()
 
-    all_matches = groupstage_matches + final_stage_matches  # Combina todas as partidas
+    all_matches = groupstage_matches + final_stage_matches
 
     try:
         with open(save_path, 'r', encoding='utf-8') as file:
@@ -22,7 +22,7 @@ def get_fc_matches():
         data = {"Jogos": {}}
 
     data["Jogos"]["FC 24"] = {
-        "Partidas": all_matches  # Armazena todas as partidas combinadas
+        "Partidas": all_matches
     }
 
     with open(save_path, 'w', encoding='utf-8') as file:
@@ -109,7 +109,6 @@ def get_groupstage_matches():
                             matches.append(match_result)
                         except Exception as e:
                             print(f'Erro ao processar match: {e}')
-
         return matches
     else:
         print(f"Erro: {response.status_code}")

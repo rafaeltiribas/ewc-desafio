@@ -30,6 +30,3 @@ def create_furia_ranking():
 
     with open(save_path, 'w', encoding='utf-8') as file:
         json.dump(ranking_data, file, ensure_ascii=False, indent=4)
-
-if __name__ == "__main__":
-    create_furia_ranking()

@@ -67,10 +67,10 @@ def determine_result(team_left, team_right, score):
     is_team_right = SIGLA in team_right
 
     if is_team_left and is_team_right:
-        return 'Erro: Time encontrado em ambos os lados'
+        return 'Time em ambos os lados'
     elif is_team_left:
         return 'Vitória' if left_score > right_score else 'Derrota'
     elif is_team_right:
         return 'Vitória' if right_score > left_score else 'Derrota'
     else:
-        return 'Não envolvido'
+        return 'Furia nao jogou'
