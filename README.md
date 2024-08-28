@@ -64,7 +64,7 @@ O **Desafio EWC** tem como premissa criar um ranking do desempenho da equipe Fú
 ## 📊 Resultado
 
 <p align="center">
-  <img src="chart.png" width="700" height="635" alt="QR Code to join Limos"/>
+  <img src="chart.png" width="700" height="535" alt="QR Code to join Limos"/>
 </p>
 
 ## 📧 Contato
