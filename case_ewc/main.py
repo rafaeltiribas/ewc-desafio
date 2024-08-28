@@ -3,5 +3,5 @@ import ranking
 
 if __name__ == "__main__":
     ingestion.get_ewc_furia_matches()
-    ranking.create_furia_rankin()
+    #ranking.create_furia_ranking()
     

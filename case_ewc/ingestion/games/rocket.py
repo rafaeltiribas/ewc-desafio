@@ -22,7 +22,6 @@ def get_rocket_matches():
             data = {"Jogos": {}}
 
         data["Jogos"]["Rocket League"] = {
-            "Stage": "",
             "Partidas": match_results
         }
 
@@ -39,7 +38,6 @@ def filter_team_matches(html_content):
 
     for match in match_rows:
         if match.find('span', {'data-highlightingclass': TEAM}):
-            date = match.find('td', class_='Date').get_text(strip=True)
             round_ = match.find('td', class_='Round').get_text(strip=True)
             team_left = match.find('td', class_='TeamLeft').get_text(strip=True)
             team_right = match.find('td', class_='TeamRight').get_text(strip=True)
@@ -48,7 +46,6 @@ def filter_team_matches(html_content):
             result = determine_result(team_left, team_right, score)
 
             match_result = {
-                "Data": date,
                 "Round": round_,
                 "Time1": team_left,
                 "Time2": team_right,

@@ -4,6 +4,7 @@ import os
 import json
 from bs4 import BeautifulSoup
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..')))
+from utils.check_win import furia_win
 from utils.constants import TEAM, CS_URL
 
 save_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../data/furia_matches.json'))
@@ -23,7 +24,6 @@ def get_cs_matches():
             data = {"Jogos": {}}
 
         data["Jogos"]["Counter Strike"] = {
-            "Stage": "",
             "Partidas": match_results
         }
 
@@ -47,12 +47,11 @@ def extract_results(html_content):
             team2_name = teams[1].get('aria-label')
             team2_score = int(teams[1].find('div', class_='brkts-opponent-score-inner').text.strip())
 
-            if team1_score > team2_score:
-                winner = team1_name
-            elif team2_score > team1_score:
-                winner = team2_name
+            result = ""
+            if team1_name ==    TEAM:
+                result = "Vitória" if furia_win(team1_score, team2_score) else "Derrota"
             else:
-                winner = "Draw"
+                result = "Vitória" if furia_win(team2_score, team1_score) else "Derrota"
 
             if TEAM in team1_name or TEAM in team2_name:
                 match_result = {
@@ -60,7 +59,7 @@ def extract_results(html_content):
                     "Time2": team2_name,
                     "Placar1": team1_score,
                     "Placar2": team2_score,
-                    "Vencedor": winner
+                    "Resultado": result
                 }
                 match_results.append(match_result)
 

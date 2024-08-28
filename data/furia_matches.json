@@ -1,119 +1,118 @@
 {
     "Jogos": {
         "Rainbow Six 6": {
-            "Stage": "",
             "Partidas": [
                 {
                     "Time1": "Into The Breach",
                     "Time2": "FURIA",
-                    "Placar1": "4",
-                    "Placar2": "7"
+                    "Placar1": 4,
+                    "Placar2": 7,
+                    "Resultado": "Vitória"
                 },
                 {
                     "Time1": "DarkZero",
                     "Time2": "FURIA",
-                    "Placar1": "7",
-                    "Placar2": "8"
+                    "Placar1": 7,
+                    "Placar2": 8,
+                    "Resultado": "Vitória"
                 },
                 {
                     "Time1": "FURIA",
                     "Time2": "Spacestation",
-                    "Placar1": "2",
-                    "Placar2": "1"
+                    "Placar1": 2,
+                    "Placar2": 1,
+                    "Resultado": "Vitória"
                 },
                 {
                     "Time1": "Team BDS",
                     "Time2": "FURIA",
-                    "Placar1": "2",
-                    "Placar2": "0"
+                    "Placar1": 2,
+                    "Placar2": 0,
+                    "Resultado": "Derrota"
                 }
             ]
         },
         "Street Fighter 6": {
-            "Stage": "",
             "Partidas": [
                 {
                     "Time1": "Xiao Hai",
                     "Time2": "Dual Kevin",
                     "Placar1": 3,
                     "Placar2": 0,
-                    "Vencedor": "Xiao Hai"
+                    "Resultado": "Derrota"
                 },
                 {
                     "Time1": "MenaRD",
                     "Time2": "Dual Kevin",
                     "Placar1": 1,
                     "Placar2": 3,
-                    "Vencedor": "Dual Kevin"
+                    "Resultado": "Vitória"
                 },
                 {
                     "Time1": "Zhen",
                     "Time2": "Dual Kevin",
                     "Placar1": 2,
                     "Placar2": 3,
-                    "Vencedor": "Dual Kevin"
+                    "Resultado": "Vitória"
                 },
                 {
                     "Time1": "gachikun",
                     "Time2": "Dual Kevin",
                     "Placar1": 3,
                     "Placar2": 1,
-                    "Vencedor": "gachikun"
+                    "Resultado": "Derrota"
                 },
                 {
                     "Time1": "Dual Kevin",
                     "Time2": "Kakeru",
                     "Placar1": 0,
                     "Placar2": 3,
-                    "Vencedor": "Kakeru"
+                    "Resultado": "Derrota"
                 }
             ]
         },
         "Counter Strike": {
-            "Stage": "",
             "Partidas": [
                 {
                     "Time1": "Natus Vincere",
                     "Time2": "FURIA Esports",
                     "Placar1": 2,
                     "Placar2": 0,
-                    "Vencedor": "Natus Vincere"
+                    "Resultado": "Derrota"
                 },
                 {
                     "Time1": "FlyQuest",
                     "Time2": "FURIA Esports",
                     "Placar1": 5,
                     "Placar2": 13,
-                    "Vencedor": "FURIA Esports"
+                    "Resultado": "Vitória"
                 },
                 {
                     "Time1": "Sashi Esport",
                     "Time2": "FURIA Esports",
                     "Placar1": 15,
                     "Placar2": 19,
-                    "Vencedor": "FURIA Esports"
+                    "Resultado": "Vitória"
                 },
                 {
                     "Time1": "FURIA Esports",
                     "Time2": "The MongolZ",
                     "Placar1": 13,
                     "Placar2": 9,
-                    "Vencedor": "FURIA Esports"
+                    "Resultado": "Vitória"
                 },
                 {
                     "Time1": "MOUZ",
                     "Time2": "FURIA Esports",
                     "Placar1": 2,
                     "Placar2": 1,
-                    "Vencedor": "MOUZ"
+                    "Resultado": "Derrota"
                 }
             ]
         },
         "Rocket League": {
-            "Stage": "",
             "Partidas": [
                 {
-                    "Data": "2024-08-22 15:20:002024-08-22 15:20:00UTC",
                     "Round": "Upper Bracket Semifinals",
                     "Time1": "FUR",
                     "Time2": "NKO",
@@ -121,7 +120,6 @@
                     "Resultado": "Vitória"
                 },
                 {
-                    "Data": "2024-08-23 13:30:002024-08-23 13:30:00UTC",
                     "Round": "Upper Bracket Final",
                     "Time1": "FUR",
                     "Time2": "VIT",
@@ -129,7 +127,6 @@
                     "Resultado": "Derrota"
                 },
                 {
-                    "Data": "2024-08-24 12:50:002024-08-24 12:50:00UTC",
                     "Round": "Lower Bracket Final",
                     "Time1": "FUR",
                     "Time2": "TWIS",
@@ -137,7 +134,6 @@
                     "Resultado": "Vitória"
                 },
                 {
-                    "Data": "2024-08-24 12:50:00August 24, 2024 - 12:50UTC",
                     "Round": "Group C",
                     "Time1": "FUR",
                     "Time2": "TWIS",
@@ -145,7 +141,6 @@
                     "Resultado": "Vitória"
                 },
                 {
-                    "Data": "2024-08-24 16:45:00August 24, 2024 - 16:45UTC",
                     "Round": "Quarterfinals",
                     "Time1": "FLCN",
                     "Time2": "FUR",
@@ -155,7 +150,6 @@
             ]
         },
         "FC 24": {
-            "Stage": "",
             "Partidas": {
                 "Groupstage": [
                     {
@@ -163,49 +157,49 @@
                         "Time2": "GoalPoacher",
                         "Placar1": "7",
                         "Placar2": "2",
-                        "Vencedor": "Nathansr22"
+                        "Resultado": "Vitória"
                     },
                     {
                         "Time1": "nicolas99fc",
                         "Time2": "Nathansr22",
                         "Placar1": "2",
                         "Placar2": "1",
-                        "Vencedor": "nicolas99fc"
+                        "Resultado": "Derrota"
                     },
                     {
                         "Time1": "Nathansr22",
                         "Time2": "ManuBachoore",
                         "Placar1": "7",
                         "Placar2": "3",
-                        "Vencedor": "Nathansr22"
+                        "Resultado": "Vitória"
                     },
                     {
                         "Time1": "Vejrgang",
                         "Time2": "Nathansr22",
                         "Placar1": "4",
                         "Placar2": "3",
-                        "Vencedor": "Vejrgang"
+                        "Resultado": "Derrota"
                     },
                     {
                         "Time1": "Bonanno",
                         "Time2": "Nathansr22",
                         "Placar1": "5",
                         "Placar2": "4",
-                        "Vencedor": "Bonanno"
+                        "Resultado": "Derrota"
                     },
                     {
                         "Time1": "Nathansr22",
                         "Time2": "Msdossary",
                         "Placar1": "3",
                         "Placar2": "2",
-                        "Vencedor": "Nathansr22"
+                        "Resultado": "Vitória"
                     },
                     {
                         "Time1": "PHzin",
                         "Time2": "Nathansr22",
                         "Placar1": "6",
                         "Placar2": "4",
-                        "Vencedor": "PHzin"
+                        "Resultado": "Derrota"
                     }
                 ],
                 "FinalStage": [
@@ -213,7 +207,8 @@
                         "Time1": "Nathansr99",
                         "Time2": "AbuMakkah",
                         "Placar1": "3",
-                        "Placar2": "4"
+                        "Placar2": "4",
+                        "Resultado": "Derrota"
                     }
                 ]
             }

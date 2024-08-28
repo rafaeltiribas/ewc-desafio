@@ -4,7 +4,8 @@ import sys
 import json
 from bs4 import BeautifulSoup
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..')))
-from utils.constants import FC_URL_GROUPSTAGE, FC_URL
+from utils.check_win import furia_win
+from utils.constants import FC_URL_GROUPSTAGE, FC_URL, FIFA_PLAYER
 
 save_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../data/furia_matches.json'))
 
@@ -19,7 +20,6 @@ def get_fc_matches():
         data = {"Jogos": {}}
 
     data["Jogos"]["FC 24"] = {
-        "Stage": "",
         "Partidas": {
             "Groupstage": groupstage_matches,
             "FinalStage": final_stage_matches
@@ -48,11 +48,18 @@ def get_final_stage_matches():
                 player2_score = opponent_entries[1].find('div', class_='brkts-opponent-score-inner').text.strip()
                 
                 if 'Nathansr99' in player1_name or 'Nathansr99' in player2_name:
+                    win = ""
+                    if player1_name == 'Nathansr99':
+                        win = "Vitória" if furia_win(player1_score, player2_score) else "Derrota"
+                    else:
+                        win = "Vitória" if furia_win(player2_score, player1_score) else "Derrota"
+
                     result = {
                         "Time1": player1_name,
                         "Time2": player2_name,
                         "Placar1": player1_score,
-                        "Placar2": player2_score
+                        "Placar2": player2_score,
+                        "Resultado": win
                     }
                     results.append(result)
 
@@ -92,13 +99,14 @@ def get_groupstage_matches():
                             score2_value = score2.get_text(strip=True)
 
                             winner = player1_name if int(score1_value) > int(score2_value) else player2_name
+                            result = "Vitória" if winner == FIFA_PLAYER else "Derrota"
 
                             match_result = {
                                 "Time1": player1_name,
                                 "Time2": player2_name,
                                 "Placar1": score1_value,
                                 "Placar2": score2_value,
-                                "Vencedor": winner
+                                "Resultado": result
                             }
                             matches.append(match_result)
                         except Exception as e:

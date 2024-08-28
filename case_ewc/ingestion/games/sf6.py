@@ -5,6 +5,7 @@ import os
 import json
 import re
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..')))
+from utils.check_win import furia_win
 from utils.constants import SF6_URL, SF6_PLAYER
 
 save_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../data/furia_matches.json'))
@@ -37,12 +38,18 @@ def get_sf6_matches():
                     except (ValueError, IndexError):
                         continue
 
+                    result = ""
+                    if player1 == SF6_PLAYER:
+                        result = "Vitória" if furia_win(score1, score2) else "Derrota"
+                    else:
+                        result = "Vitória" if furia_win(score2, score1) else "Derrota"
+
                     match_result = {
                         "Time1": player1,
                         "Time2": player2,
                         "Placar1": score1,
                         "Placar2": score2,
-                        "Vencedor": player1 if score1 > score2 else player2
+                        "Resultado": result
                     }
                     match_results.append(match_result)
 
@@ -53,7 +60,6 @@ def get_sf6_matches():
         data = {"Jogos": {}}
 
     data["Jogos"]["Street Fighter 6"] = {
-        "Stage": "",
         "Partidas": match_results
     }
 
