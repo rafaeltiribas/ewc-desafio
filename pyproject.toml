@@ -12,8 +12,8 @@ dependencies = [
     "requests",
     "beautifulsoup4",
     "lxml",
-    pandas,
-    matplotlib
+    "pandas",
+    "matplotlib"
 ]
 
 [project.optional-dependencies]

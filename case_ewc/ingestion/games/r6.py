@@ -51,7 +51,7 @@ def get_r6_matches():
     except FileNotFoundError:
         data = {"Jogos": {}}
 
-    data["Jogos"]["Rainbow Six 6"] = {
+    data["Jogos"]["Rainbow Six Siege"] = {
         "Partidas": furia_matches
     }
 
